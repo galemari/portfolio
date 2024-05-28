@@ -1,0 +1,26 @@
+body {
+    color: white;
+    background-color: black;
+    margin: auto;
+  }
+
+.navbar{
+    background-color: #811B8C;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sections{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.text{
+  display: flex;
+  flex-direction: row;
+}
