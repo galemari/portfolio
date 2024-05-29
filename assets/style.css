@@ -43,3 +43,8 @@ border-radius: 2rem;
   margin-left: 20rem;
   width: 20rem;
 }
+
+.carousel-container {
+  max-width: 600px; /* Set the desired maximum width */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
