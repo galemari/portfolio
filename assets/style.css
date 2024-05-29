@@ -11,16 +11,41 @@ body {
     height: 50px;
     display: flex;
     justify-content: flex-end;
+    gap: 2rem;
 }
 
-.sections{
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
+.aboutMe{
+  text-align: center;
 }
 
 
 .text{
   display: flex;
   flex-direction: row;
+  padding: 5rem;
+}
+
+#gif{
+border-radius: 2rem;
+}
+
+#fotoMary{
+  width: 20rem;
+  
+}
+
+.fotoandtext{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fotoandtext , p, #crypto {
+  text-align: justify;
+  margin: 3rem;
+}
+
+#programmer, #abacus, #crypto {
+  display: flex;
+  margin-left: 20rem;
+  width: 20rem;
 }
