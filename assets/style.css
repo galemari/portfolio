@@ -5,6 +5,9 @@ body {
   cursor: url('./assets/img/cursor.gif'), auto;
 }
 
+h2{
+  margin-bottom: 5rem;
+}
 .navbar {
   background-color: #811b8c;
   position: fixed;
@@ -12,6 +15,7 @@ body {
 }
 
 #aboutMe {
+  margin-top: 5rem;
   text-align: center;
   margin-bottom: -5rem;
 }
