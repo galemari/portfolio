@@ -1,19 +1,25 @@
 body {
   color: white;
-  background-color: black;
+  background-color: #1F1F2E;
   margin: auto;
   cursor: url('./assets/img/cursor.gif'), auto;
 }
 
 h2{
   margin-bottom: 5rem;
+  color: #FFC107
 }
 .navbar {
   background-color: #811b8c;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
-
+.maryabout {
+  width: 100%;
+  height: 25rem;
+  border-radius: 2rem;
+}
 #aboutMe {
   margin-top: 5rem;
   text-align: center;
@@ -40,11 +46,6 @@ h2{
   justify-content: space-between;
 }
 
-#custom-background {
-  background-color: #5a055d; /* Cambia este color al que desees */
-  transition: background-color 0.5s ease; /* Efecto de transición */
-  padding: 20px; /* Opcional: Agrega un poco de padding para mejorar el diseño */
-}
 
 .textaboutme, p, #crypto {
   text-align: justify;
@@ -158,4 +159,25 @@ a:hover {
 
 #icon:hover {
   color: #FFD700; /* Color del ícono al pasar el ratón */
+}
+
+.typewriter-container,.experience,.work {
+  width: 90%; /* Ajusta el ancho del contenedor según tus necesidades */
+  max-width: 100rem; /* Máximo ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 2rem;
+}
+
+#typewriter-text {
+  display: inline; /* Cambia de inline-block a inline */
+  border-right: 2px solid #FFC107; /* Cursor effect */
+  padding-right: 5px;
+  white-space: normal; /* Permite que el texto envuelva */
+  overflow-wrap: break-word; /* Permite el corte de palabras largas */
+  font-size: 2rem;
+}
+
+.experience{
+  background-color: #2E2E3A;
 }
