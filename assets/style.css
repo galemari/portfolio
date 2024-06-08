@@ -32,7 +32,7 @@ h2{
   padding: 5rem;
 }
 
-#gif, #programmer, #abacus, #crypto {
+#abacus, #crypto {
   border-radius: 2rem;
 }
 
@@ -52,11 +52,16 @@ h2{
   margin: 3rem;
 }
 
-#programmer, #abacus, #crypto {
-  display: flex;
-  align-items: center;
-  margin-left: 25rem;
-  width: 20rem;
+#abacus{
+  margin-top: 5rem;
+  margin-left: 3rem;
+  width: 40rem;
+  height: 20rem;
+}
+
+#crypto {
+  
+  width: 40rem;
 }
 
 .carousel-container {
@@ -64,50 +69,6 @@ h2{
   margin: 0 auto; /* Center the carousel horizontally */
 }
 
-.flip-card {
-  margin-top: 10rem;
-  margin-left: 25rem;
-  background-color: transparent;
-  width: 20rem;
-  height: 20rem;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 20rem;
-  height: 20rem;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #8e2899;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #8e2899;
-  color: black;
-  transform: rotateY(180deg);
-}
 
 .grid-container {
   display: grid;
@@ -160,13 +121,30 @@ a:hover {
 #icon:hover {
   color: #FFD700; /* Color del ícono al pasar el ratón */
 }
+.workAbacus,.workCrypto{
+  display: flex;
+  justify-content: space-between;
+  background-color: #2E2E3A;
 
-.typewriter-container,.experience,.work {
-  width: 90%; /* Ajusta el ancho del contenedor según tus necesidades */
+
+}
+
+#experience {
+  font-family: 'Clicker Script', cursive; /* Aplica la fuente Clicker Script */
+  font-size: 6rem; /* Ajusta el tamaño según sea necesario */
+  color: #FFC107; /* Opcional: Cambia el color si es necesario */
+  text-align: center; /* Centra el texto */
+  margin-top: 2rem; /* Añade un margen superior */
+}
+
+
+.typewriter-container{
+  width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
   max-width: 100rem; /* Máximo ancho del contenedor */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
   text-align: left; /* Alinea el texto a la izquierda */
   font-size: 2rem;
+  background-color: #2E2E3A;
 }
 
 #typewriter-text {
@@ -178,6 +156,13 @@ a:hover {
   font-size: 2rem;
 }
 
-.experience{
-  background-color: #2E2E3A;
+.math,.support{
+  width: 20%;
+  margin-left: 1rem;
+}
+
+#work{
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 2%;
 }
