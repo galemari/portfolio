@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Mariana López Carpio portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/b4a2ead6a5.js" crossorigin="anonymous"></script>
-    <title>Mariana Lopez Carpio portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-      </style>
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
   </head>
-  <body>
-    <div class="grid-container">
+  <body class="grid-container">
+      <!--#1 header-->
       <header>
         <div class="barradenavegacion">
           <nav class="navbar navbar-light" style="background-color: #FFC107;">
@@ -55,17 +43,23 @@
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#aboutMe"
-                      >About</a
+                      >Acerca de mi</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#technologies">Tecnologías</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#work">Work</a>
+                    <a class="nav-link" href="#experience">Experiencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#work">Trabajos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -73,10 +67,70 @@
           </nav>
         </div>
       </header>
+      <!--#2 sobre mi-->
       <section id="aboutMe">
         <div class="aboutMe">
-          <h1>Hi, my name is Mariana Lopez</h1>
-          <h2>And I build ideas.</h2>
+          <h1>Hola, me llamo Mariana Lopez</h1>
+          <h2>Y creo ideas.</h2>
+          
+        </div>
+        <div class="grid"></div>
+        <section class="typewriter-container">
+          <div class="contenedor contenedor-sobre-mi">
+              <h2 class="titulo" id="sobre-mi">Sobre mí</h2>
+              <div class="texto">
+                  <p class="direccion"><span class="dir">C: portafolio/MaryLopez</span></p>
+                  <p class="descripcion">
+                      $
+                      <span id="typewriter-text">
+                          Bienvenido: <br><br>
+
+                          Soy desarrolladora fullstack, me gusta mucho el... Un momento, ¿sabes qué es
+                          eso, no?<br><br>
+                          'Desarrollador fullstack'. <br><br> A ver, te explico: <br><br>
+
+                          Un desarollador fullstack es el encargado de todo lo que puedes ver o el frontend y lo que no en un sitio web.<br><br>
+                          Desde el diseño, los estilos , animaciones del mismo y el backend trabajamos los datos, lógica de negocio y que además de hacer un website lindo sea funcional . Básicamente hace que este
+                          luzca bien y
+                          sea agradable a la vista de los usuarios (o en teoría debería ser así).<br><br>
+
+                          ¿Suena bien, no?
+                          <br><br>
+
+                          Me gusta el café y los gatos. Aparte de eso, también me gusta el animé
+                          y la música.
+                          
+                  </p>
+              </div>
+          </div>
+      </section>
+      </section>
+      <!--#3 Experiencia laboral-->
+      <section id="work">
+        <p id="experience">
+          Mi experiencia
+        </p >
+        <div class="workAbacus">
+          <img id="abacus" src="./assets/img/abacus.avif" />
+        <p class="math">
+          Profesora de matemáticas con ábaco en indigo mental (junio de 2021 - presente). enseño matemáticas con el ábaco en inglés y español.
+        </p>
+        </div>
+        <div class="workCrypto">
+          <img id="crypto" src="./assets/img/crypto.avif" />
+        <p class="support">
+          Agente de soporte en gate.io en inglés (junio de 2021 - junio de 2022). verifico transacciones de criptomonedas, apruebo la autenticación de 2fa y me comunico con los clientes.
+    
+        </p>
+        </div>
+        <div class="writing">
+          <h3><a href="https://community.listopro.com/author/mariana/">Aportes técnicos en Python y Java.</a></h3> 
+        </div>
+        
+      </section>
+      <!--#4 Proyectos de programacion-->
+      <section id="proyectos">
+        <h3>Proyectos</h3>
           <div class="carousel-container">
             <div
               id="carouselExampleControls"
@@ -132,59 +186,32 @@
               </button>
             </div>
           </div>
-        </div>
-        <div class="grid"></div>
-        <section class="typewriter-container">
-          <div class="contenedor contenedor-sobre-mi">
-              <h2 class="titulo" id="sobre-mi">Sobre mí</h2>
-              <div class="texto">
-                  <p class="direccion"><span class="dir">C: portafolio/MaryLopez</span></p>
-                  <p class="descripcion">
-                      $
-                      <span id="typewriter-text">
-                          Bienvenido: <br><br>
-
-                          Soy desarrolladora fullstack, me gusta mucho el... Un momento, ¿sabes qué es
-                          eso, no?<br><br>
-                          'Desarrollador fullstack'. <br><br> A ver, te explico: <br><br>
-
-                          Un desarollador fullstack es el encargado de todo lo que puedes ver y lo que no en un sitio web.<br><br>
-                          Desde el diseño, los estilos e incluso animaciones del mismo. Básicamente hace que este
-                          luzca bien y
-                          sea agradable a la vista de los usuarios (o en teoría debería ser así).<br><br>
-
-                          ¿Suena bien, no?
-                          <br><br>
-
-                          Me gusta el café y los gatos. Aparte de eso, también me gusta el animé
-                          y la música.
-                          
-                  </p>
-              </div>
+      </section>
+      <!--#5 Habilidades tecnologicas-->
+      <section class="contenedorHabilidades">
+        <h3>Habilidades tecnológicas</h3>
+        <div id="technologies">
+          <div class="frontend">
+            <img class="icon" id="frontend-icon" src="./assets/img/frontend.png" alt="Frontend Icon">
+            <div class="tech-images" id="frontend-images">
+              <img class="html" src="./assets/img/html.jpg" alt="HTML">
+              <img class="css" src="./assets/img/css.jpg" alt="CSS">
+              <img class="javascript" src="./assets/img/javascript.jpg" alt="JavaScript">
+              <img class="bootstrap" src="./assets/img/bootstrap.jpg" alt="Bootstrap">
+            </div>
           </div>
-      </section>
-      </section>
-      <section id="work">
-        <p id="experience">
-          Mi experiencia
-        </p >
-        <div class="workAbacus">
-          <img id="abacus" src="./assets/img/abacus.svg" />
-        <p class="math">
-          MATHEMATICS TEACHER WITH ABACUS AT INDIGO MENTAL JUNE (2021) - PRESENT
-          TEACH MATHEMATICS WITH THE ABACUS IN ENGLISH AND SPANISH.
-        </p>
+          <div class="backend">
+            <img class="icon" id="backend-icon" src="./assets/img/backend.png" alt="Backend Icon">
+            <div class="tech-images" id="backend-images">
+              <p>PostgreSQL</p>
+              <p>NodeJS</p>
+              <p>Express</p>
+              <img src="./assets/img/backend.gif">
+            </div>
+          </div>
         </div>
-        <div class="workCrypto">
-          <img id="crypto" src="./assets/img/crypto.avif" />
-        <p class="support">
-          SUPPORT AGENT AT GATE.IO IN ENGLISH JUNE 2021 - JUNE 2022 VERIFY CRYPTO
-          TRANSACTIONS APPROVE 2FA AUTHENTICATION COMMUNICATE WITH CUSTOMERS.
-        </p>
-        </div>
-        
       </section>
-      <audio controls src="./assets/audio/gaming.mp3"></audio>
+      <!--#6 Footer-->
       <footer>
         <section id="contact" class="Contact">
           <a href="https://github.com/galemari">GitHub</a>
@@ -193,7 +220,6 @@
           <i id="icon" class="fa-brands fa-linkedin"></i>
         </section>
       </footer>
-    </div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -1,74 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  --morado: #811b8c;
+  --negroscuro: #1f1f2e;
+  --amarillo: #ffc107;
+  --gris: #2e2e3a;
+  --blanco: #ffffff;
+}
 body {
-  color: white;
-  background-color: #1F1F2E;
+  color: var(--blanco);
+  background-color: var(--negroscuro);
   margin: auto;
-  cursor: url('./assets/img/cursor.gif'), auto;
+  cursor: url("./assets/img/cursor.gif"), auto;
 }
+/* ordenar por sección de arriba hacia abajo las etiquetas de cada uno 
+enfocar el css para vista movil y luego abarcar las vistas grandes*/
 
-h2{
+h2 {
   margin-bottom: 5rem;
-  color: #FFC107
+  color: var(--amarillo);
 }
+h3 {
+  font-family: "Clicker Script", cursive; /* Aplica la fuente Clicker Script */
+  font-size: 6rem; /* Ajusta el tamaño según sea necesario */
+  color: var(--amarillo); /* Opcional: Cambia el color si es necesario */
+  text-align: center; /* Centra el texto */
+  margin-top: 2rem; /* Añade un margen superior */
+}
+p {
+  text-align: justify;
+  margin: 3rem;
+}
+/* #1 header*/
 .navbar {
-  background-color: #811b8c;
+  background-color: var(--morado);
   position: fixed;
   width: 100%;
   z-index: 1000;
 }
-.maryabout {
-  width: 100%;
-  height: 25rem;
-  border-radius: 2rem;
-}
+/* #2 sobre mi */
 #aboutMe {
   margin-top: 5rem;
   text-align: center;
   margin-bottom: -5rem;
 }
-
+.descripcion {
+  margin-bottom: 4rem;
+}
 .text {
   display: flex;
   flex-direction: row;
   padding: 5rem;
 }
+.typewriter-container {
+  width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
+  max-width: 100rem; /* Máximo ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 2rem;
+  background-color: var(--negroscuro);
+  padding: 5rem;
+}
 
-#abacus, #crypto {
+#typewriter-text {
+  display: inline; /* Cambia de inline-block a inline */
+  border-right: 2px solid var(--amarillo); /* Cursor effect */
+  padding-right: 5px;
+  white-space: normal; /* Permite que el texto envuelva */
+  overflow-wrap: break-word; /* Permite el corte de palabras largas */
+  font-size: 2rem;
+}
+
+/* #3 Experiencia laboral */
+#work {
+  margin-left: 13rem;
+  width: 80%;
+  border-radius: 2%;
+}
+#abacus,
+#crypto {
   border-radius: 2rem;
 }
-
-#fotoMary {
-  width: 10rem;
+#experience,
+#sobre-mi {
+  font-family: "Clicker Script", cursive; /* Aplica la fuente Clicker Script */
+  font-size: 6rem; /* Ajusta el tamaño según sea necesario */
+  color: var(--amarillo); /* Opcional: Cambia el color si es necesario */
+  text-align: center; /* Centra el texto */
+  margin-top: 2rem; /* Añade un margen superior */
 }
-
-.textaboutme {
-  border-radius: 1rem;
+.workAbacus,
+.workCrypto {
   display: flex;
   justify-content: space-between;
 }
-
-
-.textaboutme, p, #crypto {
+#crypto {
   text-align: justify;
   margin: 3rem;
+  width: 40rem;
 }
-
-#abacus{
+#abacus {
   margin-top: 5rem;
   margin-left: 3rem;
   width: 40rem;
   height: 20rem;
 }
-
-#crypto {
-  
-  width: 40rem;
+.math,
+.support {
+  margin-top: 8rem;
+  width: 30%;
+  margin-left: 1rem;
+  margin-right: 8rem;
+  font-size: 2rem;
 }
-
+/* #4 Proyectos de programacion */
+#technologies {
+  display: flex;
+  justify-content: center;
+}
+/* Esconde las imágenes de tecnología por defecto */
+.tech-images {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
 .carousel-container {
   max-width: 600px; /* Set the desired maximum width */
   margin: 0 auto; /* Center the carousel horizontally */
 }
-
 
 .grid-container {
   display: grid;
@@ -85,84 +144,47 @@ h2{
   height: 25rem; /* Puedes ajustar esta altura según tus necesidades */
   object-fit: cover; /* Esto asegura que la imagen se recorte para llenar el contenedor sin distorsionarse */
 }
-
-#contact {
-  font-size: 1rem;
-  text-align: center;
-}
-
-.foto {
-  width: 100%;
-  height: 20rem;
-}
-
-a:hover {
-  color: #FFD700; /* Color del texto del enlace al pasar el ratón (hover) */
-  text-decoration: underline; /* Subraya el texto al pasar el ratón */
-}
-
-/* Estilo específico para el footer */
-#contact a {
-  color: #81C784; /* Color específico para enlaces en el footer */
-}
-
-#contact a:hover {
-  color: #66BB6A; /* Color específico al pasar el ratón en el footer */
-}
-
+/* #5 Habilidades tecnologicas */
 /* Estilo para íconos de redes sociales */
 #icon {
   margin-left: 0.5rem; /* Margen a la izquierda para separar el ícono del texto */
   font-size: 1.5rem; /* Tamaño de la fuente para los íconos */
-  color: #FFFFFF; /* Color del ícono */
+  color: var(--blanco); /* Color del ícono */
   transition: color 0.3s ease; /* Añade una transición suave para cambios de color */
 }
-
-#icon:hover {
-  color: #FFD700; /* Color del ícono al pasar el ratón */
-}
-.workAbacus,.workCrypto{
+/* Muestra las imágenes cuando el contenedor tiene la clase "active" */
+.tech-images.active {
   display: flex;
-  justify-content: space-between;
-  background-color: #2E2E3A;
-
-
+  opacity: 1;
+  gap: 10px; /* Espacio entre las imágenes */
+  margin-top: 10px; /* Separación superior de las imágenes */
+}
+/* #6 Footer */
+#contact {
+  font-size: 1rem;
+  text-align: center;
+}
+.icon {
+  width: 5rem;
 }
 
-#experience {
-  font-family: 'Clicker Script', cursive; /* Aplica la fuente Clicker Script */
-  font-size: 6rem; /* Ajusta el tamaño según sea necesario */
-  color: #FFC107; /* Opcional: Cambia el color si es necesario */
-  text-align: center; /* Centra el texto */
-  margin-top: 2rem; /* Añade un margen superior */
+/* Estilo específico para el footer */
+#contact a {
+  color: var(--amarillo); /* Color específico para enlaces en el footer */
 }
 
-
-.typewriter-container{
-  width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
-  max-width: 100rem; /* Máximo ancho del contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  text-align: left; /* Alinea el texto a la izquierda */
-  font-size: 2rem;
-  background-color: #2E2E3A;
+#contact a:hover {
+  color: var(--blanco); /* Color específico al pasar el ratón en el footer */
+}
+.icon {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
 }
 
-#typewriter-text {
-  display: inline; /* Cambia de inline-block a inline */
-  border-right: 2px solid #FFC107; /* Cursor effect */
-  padding-right: 5px;
-  white-space: normal; /* Permite que el texto envuelva */
-  overflow-wrap: break-word; /* Permite el corte de palabras largas */
-  font-size: 2rem;
+.icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
-
-.math,.support{
-  width: 20%;
-  margin-left: 1rem;
-}
-
-#work{
-  margin-left: 25%;
-  width: 50%;
-  border-radius: 2%;
-}
+/* ---- */
